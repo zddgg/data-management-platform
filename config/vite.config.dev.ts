@@ -6,17 +6,17 @@ export default mergeConfig(
   {
     mode: 'development',
     server: {
-      open: true,
+      open: false,
       fs: {
         strict: true,
       },
     },
     plugins: [
-      eslint({
-        cache: false,
-        include: ['src/**/*.ts', 'src/**/*.tsx', 'src/**/*.vue'],
-        exclude: ['node_modules'],
-      }),
+      // eslint({
+      //   cache: false,
+      //   include: ['src/**/*.ts', 'src/**/*.tsx', 'src/**/*.vue'],
+      //   exclude: ['node_modules'],
+      // }),
     ],
   },
   baseConfig
